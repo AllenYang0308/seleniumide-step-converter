@@ -1,0 +1,624 @@
+{
+  "id": "d3fd2c29-7d3a-4c89-a797-016b0a460148",
+  "version": "3.0",
+  "name": "New Project",
+  "url": "http://www.google.com",
+  "urls": [
+    "http://www.google.com"
+  ],
+  "plugins": [],
+  "suites": [
+    {
+      "id": "45fa9345-a690-4cd7-835c-c395a9e789ed",
+      "name": "New Suite",
+      "parallel": false,
+      "persistSession": false,
+      "tests": [
+        "33211a82-0d14-4484-9c3f-ded850410c65"
+      ],
+      "timeout": 30000
+    }
+  ],
+  "tests": [
+    {
+      "id": "33211a82-0d14-4484-9c3f-ded850410c65",
+      "name": "",
+      "commands": [
+        {
+          "id": "5d04c1bd-1c1d-449c-a752-fb5507ad472f",
+          "command": "open",
+          "target": "https://learn.microsoft.com/en-us/docs/",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "css=[data-test-id=\"directory-page-search-form-autocomplete-input\"]",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "6e4978c3-7e09-4794-8796-12c50eb3c7d1",
+          "targets": [
+            [
+              "css=[data-test-id=\"directory-page-search-form-autocomplete-input\"]",
+              "css:data-test-id"
+            ],
+            [
+              "id=directory-page-search-form-autocomplete-input",
+              "id"
+            ],
+            [
+              "css=[data-test-id=\"directory-page-search-form-autocomplete-input\"]",
+              "css:data-attr"
+            ],
+            [
+              "css=#directory-page-search-form-autocomplete-input",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@id='directory-page-search-form-autocomplete-input'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//form[@id='directory-page-search-form']/div/div/div/div/input)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "type",
+          "target": "css=[data-test-id=\"directory-page-search-form-autocomplete-input\"]",
+          "value": "DevOps",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "59b6069f-c143-4977-b4fc-fb4771b7e2ab",
+          "targets": [
+            [
+              "css=[data-test-id=\"directory-page-search-form-autocomplete-input\"]",
+              "css:data-test-id"
+            ],
+            [
+              "id=directory-page-search-form-autocomplete-input",
+              "id"
+            ],
+            [
+              "css=[data-test-id=\"directory-page-search-form-autocomplete-input\"]",
+              "css:data-attr"
+            ],
+            [
+              "css=#directory-page-search-form-autocomplete-input",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@id='directory-page-search-form-autocomplete-input'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//form[@id='directory-page-search-form']/div/div/div/div/input)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=#directory-search-submit > span:nth-child(2)",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "93ab1f3a-600a-4512-b3bd-d4cab7f67ada",
+          "targets": [
+            [
+              "css=#directory-search-submit > span:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//button[@id='directory-search-submit']/span[2])[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=.docon-arrow-right",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "43699851-0a70-4779-9a2b-740695afb4c2",
+          "targets": [
+            [
+              "css=.docon-arrow-right",
+              "css:finder"
+            ],
+            [
+              "xpath=(//main[@id='main']/div/div/div[2]/div[4]/div/div/nav/ul/li[10]/button/span/span)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=.radio:nth-child(2) span:nth-child(1)",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "dcb5dbfd-1972-4dd7-84cb-d1b60c4fad14",
+          "targets": [
+            [
+              "css=.radio:nth-child(2) span:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//main[@id='main']/div/div/div/div/div/fieldset/div/label[2]/span/span)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=[data-page=\"4\"]",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "cc23284e-145d-4c0b-a67e-3326bcc81388",
+          "targets": [
+            [
+              "css=[data-page=\"4\"]",
+              "css:data-attr"
+            ],
+            [
+              "css=li:nth-child(7) > .pagination-link",
+              "css:finder"
+            ],
+            [
+              "xpath=(//main[@id='main']/div/div/div[2]/div[4]/div/div/nav/ul/li[7]/button)[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//button[contains(.,'4')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=.radio:nth-child(4) span:nth-child(1)",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "025abbda-8d85-4fbd-80ba-b71bb6ecc207",
+          "targets": [
+            [
+              "css=.radio:nth-child(4) span:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//main[@id='main']/div/div/div/div/div/fieldset/div/label[4]/span/span)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=.radio:nth-child(5) span:nth-child(1)",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "f37ed363-6d42-484c-bfb4-6c45abb7b89c",
+          "targets": [
+            [
+              "css=.radio:nth-child(5) span:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//main[@id='main']/div/div/div/div/div/fieldset/div/label[5]/span/span)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "id=facet-input-filter-tags",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "3c4c8e72-1781-4767-951a-514b2bd18949",
+          "targets": [
+            [
+              "id=facet-input-filter-tags",
+              "id"
+            ],
+            [
+              "css=#facet-input-filter-tags",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@id='facet-input-filter-tags'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//main[@id='main']/div/div/div/div[2]/input)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "type",
+          "target": "id=facet-input-filter-tags",
+          "value": "python",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "cb6bf9e9-e7a4-4a5d-a707-1e42e015606b",
+          "targets": [
+            [
+              "id=facet-input-filter-tags",
+              "id"
+            ],
+            [
+              "css=#facet-input-filter-tags",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@id='facet-input-filter-tags'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//main[@id='main']/div/div/div/div[2]/input)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "sendKeys",
+          "target": "id=facet-input-filter-tags",
+          "value": "${KEY_ENTER}",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "224fe9aa-7503-4f74-b435-9097f348b2f7",
+          "targets": [
+            [
+              "id=facet-input-filter-tags",
+              "id"
+            ],
+            [
+              "css=#facet-input-filter-tags",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@id='facet-input-filter-tags'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//main[@id='main']/div/div/div/div[2]/input)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=[data-page=\"3\"]",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "712bf1e4-d9e9-40d4-9141-b2e96ca00992",
+          "targets": [
+            [
+              "css=[data-page=\"3\"]",
+              "css:data-attr"
+            ],
+            [
+              "css=li:nth-child(6) > .pagination-link",
+              "css:finder"
+            ],
+            [
+              "xpath=(//main[@id='main']/div/div/div[2]/div[4]/div/div/nav/ul/li[6]/button)[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//button[contains(.,'3')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=.control:nth-child(1) .radio:nth-child(1) > .radio-dot",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "a92596cb-38aa-4e84-9dd6-ec5415cf68a8",
+          "targets": [
+            [
+              "css=.control:nth-child(1) .radio:nth-child(1) > .radio-dot",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@name='category'])[3]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//main[@id='main']/div/div/div/div/div/fieldset/div/label/input)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=[data-test-id=\"facet-search-input\"]",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "9fda5a17-9db3-4154-bae2-876e0f966a6d",
+          "targets": [
+            [
+              "css=[data-test-id=\"facet-search-input\"]",
+              "css:data-test-id"
+            ],
+            [
+              "id=facet-search-input",
+              "id"
+            ],
+            [
+              "name=facet-search-input",
+              "name"
+            ],
+            [
+              "css=[data-test-id=\"facet-search-input\"]",
+              "css:data-attr"
+            ],
+            [
+              "css=#facet-search-input",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@id='facet-search-input'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//form[@id='facet-search-form']/div/div/div/div/input)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=[data-test-id=\"facet-search-input\"]",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "07f5cbd5-c13f-4aa4-a595-af7f9ce5ac76",
+          "targets": [
+            [
+              "css=[data-test-id=\"facet-search-input\"]",
+              "css:data-test-id"
+            ],
+            [
+              "id=facet-search-input",
+              "id"
+            ],
+            [
+              "name=facet-search-input",
+              "name"
+            ],
+            [
+              "css=[data-test-id=\"facet-search-input\"]",
+              "css:data-attr"
+            ],
+            [
+              "css=#facet-search-input",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@id='facet-search-input'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//form[@id='facet-search-form']/div/div/div/div/input)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "doubleClick",
+          "target": "css=[data-test-id=\"facet-search-input\"]",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "a15ccbea-6840-4fe2-aa16-ab068d29e248",
+          "targets": [
+            [
+              "css=[data-test-id=\"facet-search-input\"]",
+              "css:data-test-id"
+            ],
+            [
+              "id=facet-search-input",
+              "id"
+            ],
+            [
+              "name=facet-search-input",
+              "name"
+            ],
+            [
+              "css=[data-test-id=\"facet-search-input\"]",
+              "css:data-attr"
+            ],
+            [
+              "css=#facet-search-input",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@id='facet-search-input'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//form[@id='facet-search-form']/div/div/div/div/input)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=[data-test-id=\"facet-search-input\"]",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "d28af732-2a38-431e-8da5-ea9e7d09907d",
+          "targets": [
+            [
+              "css=[data-test-id=\"facet-search-input\"]",
+              "css:data-test-id"
+            ],
+            [
+              "id=facet-search-input",
+              "id"
+            ],
+            [
+              "name=facet-search-input",
+              "name"
+            ],
+            [
+              "css=[data-test-id=\"facet-search-input\"]",
+              "css:data-attr"
+            ],
+            [
+              "css=#facet-search-input",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@id='facet-search-input'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//form[@id='facet-search-form']/div/div/div/div/input)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "type",
+          "target": "css=[data-test-id=\"facet-search-input\"]",
+          "value": "AI",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "673a06b6-0ec2-4644-b55f-88f3a10f7ef5",
+          "targets": [
+            [
+              "css=[data-test-id=\"facet-search-input\"]",
+              "css:data-test-id"
+            ],
+            [
+              "id=facet-search-input",
+              "id"
+            ],
+            [
+              "name=facet-search-input",
+              "name"
+            ],
+            [
+              "css=[data-test-id=\"facet-search-input\"]",
+              "css:data-attr"
+            ],
+            [
+              "css=#facet-search-input",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@id='facet-search-input'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//form[@id='facet-search-form']/div/div/div/div/input)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "sendKeys",
+          "target": "css=[data-test-id=\"facet-search-input\"]",
+          "value": "${KEY_ENTER}",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "60e63eab-036d-4f09-95c1-917ac0c140d2",
+          "targets": [
+            [
+              "css=[data-test-id=\"facet-search-input\"]",
+              "css:data-test-id"
+            ],
+            [
+              "id=facet-search-input",
+              "id"
+            ],
+            [
+              "name=facet-search-input",
+              "name"
+            ],
+            [
+              "css=[data-test-id=\"facet-search-input\"]",
+              "css:data-attr"
+            ],
+            [
+              "css=#facet-search-input",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@id='facet-search-input'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//form[@id='facet-search-form']/div/div/div/div/input)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=.is-category span",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "f97ba2ee-5b2d-4173-b56b-4f9ea4ac43f8",
+          "targets": [
+            [
+              "css=.is-category span",
+              "css:finder"
+            ],
+            [
+              "xpath=(//div[@id='headerAreaHolder']/header/div/nav/ul/li/a/span)[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//span[contains(.,'Learn')]",
+              "xpath:innerText"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "snapshot": {
+    "dependencies": {},
+    "tests": [],
+    "jest": {
+      "extraGlobals": []
+    }
+  },
+  "delay": 1
+}
