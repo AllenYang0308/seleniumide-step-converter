@@ -54,7 +54,7 @@ public class Task {
 
     public String GetSharedParameters() {
         List<String> tmp = new ArrayList<>();
-        String pattern = "<kvp key=\"%s\" value=\"%s\"/>";
+        String pattern = "<kvp key=\\\"%s\\\" value=\\\"%s\\\"/>";
         String result;
         for (Steps step: this.getTask()) {
             if (step.getElementName() != null) {
@@ -77,9 +77,21 @@ public class Task {
                 tmp.add(pattern.formatted("NL", "/"));
             }
         }
-        String headerStr = "<parameterSet><paramNames><param>elementName</param><param>desc</param><param>interval</param><param>module</param><param>url</param><param>by</param><param>key</param><param>frame</param><param>pattern</param><param>NL</param></paramNames><paramData lastId=\"14\"><dataRow id=\"1\">";
+        String headerStr = "<parameterSet><paramNames><param>elementName</param><param>desc</param><param>interval</param><param>module</param><param>url</param><param>by</param><param>key</param><param>frame</param><param>pattern</param><param>NL</param></paramNames><paramData lastId=\\\"14\\\"><dataRow id=\\\"1\\\">";
         String tailStr = "</dataRow></paramData></parameterSet>";
         result = String.join("", tmp);
-        return result;
+        return headerStr+result+tailStr;
     }
+
+    // public void printSteps() {
+    //     for (Steps step: this.task) {
+    //         System.out.println(step);
+
+    //     }
+    // }
+
+    // public void getTaskForTestPlan() {
+    //     //
+    //     System.out.println("getTaskForTestPlan");
+    // }
 }
