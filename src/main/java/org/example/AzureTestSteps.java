@@ -24,14 +24,14 @@ public class AzureTestSteps {
 
         this.updateValue.put("from", Optional.ofNullable(null));
 
-        String headerStr = "<parameterSet><paramNames><param>elementName</param><param>desc</param><param>interval</param><param>module</param><param>url</param><param>by</param><param>key</param><param>frame</param><param>pattern</param><param>NL</param></paramNames><paramData lastId=\"14\"><dataRow id=\"1\">";
-        String tailStr = "</dataRow></paramData></parameterSet>";
-        String paramValue = headerStr+task.GetSharedParameters()+tailStr;
+        // String headerStr = "<parameterSet><paramNames><param>elementName<\\\\/param><param>desc<\\\\/param><param>interval<\\\\/param><param>module<\\\\/param><param>url<\\\\/param><param>by<\\\\/param><param>key<\\\\/param><param>frame<\\\\/param><param>pattern<\\\\/param><param>NL<\\\\/param><\\\\/paramNames><paramData lastId=\"14\"><dataRow id=\"1\">";
+        // String tailStr = "<\\\\/dataRow><\\\\/paramData><\\\\/parameterSet>";
+        // String paramValue = task.GetSharedParameters();
 
         // this.updateValue.put("value", task.GetSharedParameters());
 
-        this.updateValue.put("value", paramValue);
-        // this.updateValue.put("value", "%s");
+        // this.updateValue.put("value", paramValue);
+        this.updateValue.put("value", "%s");
 
         this.objectList.add(updateValue.toString());
     }
@@ -42,6 +42,6 @@ public class AzureTestSteps {
         // String paramValue = headerStr+task.GetSharedParameters()+tailStr;
         // return this.objectList.toString().formatted(paramValue);
 
-        return this.objectList.toString();
+        return this.objectList.toString().formatted(task.GetSharedParameters());
     }
 }
