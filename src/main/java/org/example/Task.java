@@ -82,16 +82,4 @@ public class Task {
         result = String.join("", tmp);
         return headerStr+result+tailStr;
     }
-
-    // public void printSteps() {
-    //     for (Steps step: this.task) {
-    //         System.out.println(step);
-
-    //     }
-    // }
-
-    // public void getTaskForTestPlan() {
-    //     //
-    //     System.out.println("getTaskForTestPlan");
-    // }
 }
