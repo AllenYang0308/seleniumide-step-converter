@@ -38,12 +38,43 @@ public class Steps {
                 this.setElementName(step);
                 this.setKey(step);
             }
+
+            case "runScript" -> {
+                this.module = "webdriver_run_script";
+                this.setRunScript(step);
+                this.interval = 1;
+            }
+
+            case "mouseOver" -> {
+                this.module = "find_element_and_hover";
+                this.setBy(step);
+                this.setElementName(step);
+            }
+
+            // case "setWindowSize" -> {
+            //     this.module = "set_windows_size";
+            //     this.setWindowsSize(step);
+            // }
         }
     }
 
     private void setOpenWebsite(JSONObject step) {
         this.url = step.getString("target");
         this.desc = this.module;
+        this.interval = 1;
+    }
+
+    // public void setWindowsSize(JSONObject step) {
+    //     String target;
+    //     target = step.getString("target");
+    //     this.elementName = target;
+    //     this.interval = 1;
+    // }
+
+    public void setRunScript(JSONObject step) {
+        String target;
+        target = step.getString("target");
+        this.elementName = target;
         this.interval = 1;
     }
 
