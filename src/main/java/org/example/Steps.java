@@ -3,9 +3,6 @@ package org.example;
 import lombok.Data;
 import org.json.JSONObject;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 @Data
 public class Steps {
     String elementName;
@@ -60,11 +57,6 @@ public class Steps {
                 // this.module = "switch_tab_by_name";
                 this.switchTab(step);
             }
-
-            // case "setWindowSize" -> {
-            //     this.module = "set_windows_size";
-            //     this.setWindowsSize(step);
-            // }
         }
     }
 
@@ -75,17 +67,9 @@ public class Steps {
     }
 
     private void switchTab(JSONObject step) {
-        // String tabName = step.getString("target").split("=")[1].replace("$", "").replace("{", "").replace("}", "");
         String tabName = step.getString("target").split("=")[1];
         this.tab = Integer.valueOf(tabName);
     }
-
-    // public void setWindowsSize(JSONObject step) {
-    //     String target;
-    //     target = step.getString("target");
-    //     this.elementName = target;
-    //     this.interval = 1;
-    // }
 
     public void setRunScript(JSONObject step) {
         String target;

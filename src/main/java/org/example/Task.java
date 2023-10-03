@@ -64,7 +64,6 @@ public class Task {
                 elementName = elementName.replace("<", "&amp;lt;");
                 tmp.add(pattern.formatted("elementName", elementName));
             }
-            // if (step.getElementName() != null) { tmp.add(pattern.formatted("elementName", step.getElementName()));}
             if (step.getDesc() != null) { tmp.add(pattern.formatted("desc", step.getDesc()));}
             if (step.getInterval() != null) { tmp.add(pattern.formatted("interval", step.getInterval()));}
             if (step.getUrl() != null) { tmp.add(pattern.formatted("url", step.getUrl()));}
