@@ -64,7 +64,6 @@ public class Task {
                 elementName = elementName.replace("<", "&amp;lt;");
                 tmp.add(pattern.formatted("elementName", elementName));
             }
-            // if (step.getElementName() != null) { tmp.add(pattern.formatted("elementName", step.getElementName()));}
             if (step.getDesc() != null) { tmp.add(pattern.formatted("desc", step.getDesc()));}
             if (step.getInterval() != null) { tmp.add(pattern.formatted("interval", step.getInterval()));}
             if (step.getUrl() != null) { tmp.add(pattern.formatted("url", step.getUrl()));}
@@ -72,6 +71,7 @@ public class Task {
             if (step.getKey() != null) { tmp.add(pattern.formatted("key", step.getKey()));}
             if (step.getFrame() != null) { tmp.add(pattern.formatted("frame", step.getFrame()));}
             if (step.getPattern() != null) { tmp.add(pattern.formatted("pattern", step.getPattern()));}
+            if (step.getTab() != null) { tmp.add(pattern.formatted("tab", step.getTab()));}
             if (step.getModule() != null) {
                 tmp.add(pattern.formatted("module", step.getModule()));
                 tmp.add(pattern.formatted("NL", "/"));

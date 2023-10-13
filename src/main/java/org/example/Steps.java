@@ -18,6 +18,7 @@ public class Steps {
     String key;
     String fileName;
     String module;
+    String tabName;
 
     public Steps(JSONObject step) {
         String command = step.getString("command");
@@ -51,10 +52,11 @@ public class Steps {
                 this.setElementName(step);
             }
 
-            // case "setWindowSize" -> {
-            //     this.module = "set_windows_size";
-            //     this.setWindowsSize(step);
-            // }
+            case "selectWindow" -> {
+                this.module = "switch_tab";
+                // this.module = "switch_tab_by_name";
+                this.switchTab(step);
+            }
         }
     }
 
@@ -64,12 +66,10 @@ public class Steps {
         this.interval = 1;
     }
 
-    // public void setWindowsSize(JSONObject step) {
-    //     String target;
-    //     target = step.getString("target");
-    //     this.elementName = target;
-    //     this.interval = 1;
-    // }
+    private void switchTab(JSONObject step) {
+        String tabName = step.getString("target").split("=")[1];
+        this.tab = Integer.valueOf(tabName);
+    }
 
     public void setRunScript(JSONObject step) {
         String target;
